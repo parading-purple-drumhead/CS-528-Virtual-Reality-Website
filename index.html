@@ -14,13 +14,24 @@
   </head>
   <body>
     <div class="container">
-      <div class="row my-5 text-center">
+      <div class="row mb-5 text-center">
         <h1 class="mt-5">CS 528 Virtual Reality Project</h1>
         <h3 class="mb-2 text-secondary">Sudhanshu Basuroy</h3>
       </div>
 
-      <div class="row mb-3">
-        <div class="col-lg-6">Video goes here</div>
+      <div class="row mb-5">
+        <div class="col-lg-6">
+          <iframe
+            class="rounded"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/VgvHA4BQoXU?si=N2d_YkZW0tE6rmSa"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
         <div class="col-lg-6">
           <h2 class="mb-5">Project Links</h2>
           <p>
@@ -37,39 +48,96 @@
         <h2>How To Run</h2>
         <div class="col-lg-6">
           <h4 class="mt-4">Installing Unity</h4>
-          <p >
-            <ol>
-              <li>Download  <a href="https://unity.com/unity-hub" target="_blank">Unity Hub</a> from the official Unity website if you haven't already</li>
-              <li>Open Unity Hub and click on <i>Installs</i>. Then click on the <i>Install Editor</i> button. In the popup, click on the <i>Archive</i> tab and then click on the <i>download archive</i> link</li>
-              <li>On the website, click on the <i>Unity 2019.X</i> tab and scroll to Unity 2019.2.11 and click on Unity Hub button. Then follow on-screen instructions to install Unity v2019.2.11 on your computer</li>
-            </ol>
-          </p>
+          <ol>
+            <li>
+              Download
+              <a href="https://unity.com/unity-hub" target="_blank"
+                >Unity Hub</a
+              >
+              from the official Unity website if you haven't already
+            </li>
+            <li>
+              Open Unity Hub and click on <i>Installs</i>. Then click on the
+              <i>Install Editor</i> button. In the popup, click on the
+              <i>Archive</i> tab and then click on the
+              <i>download archive</i> link
+            </li>
+            <li>
+              On the website, click on the <i>Unity 2019.X</i> tab and scroll to
+              Unity 2019.2.11 and click on Unity Hub button. Then follow
+              on-screen instructions to install Unity v2019.2.11 on your
+              computer
+            </li>
+          </ol>
+
           <h4 class="mt-4">Downloading The Project</h4>
-          <p>
-            <ol>
-              <li>Clone the project to your computer from the GitHub link specified above</li>
-              <li>Open Unity Hub on your computer.</li>
-              <li>Click on the "Projects" tab on the left sidebar.</li>
-              <li>Click on the "Add" button to add a new project.</li>
-              <li>In the popup window, browse to the location where you cloned the project</li>
-              <li>Click on the <i>CS-528-Virtual-Reality-Project</i> folder to select it.</li>
-              <li>Click on the "Open" button to open the project in Unity.</li>
-            </ol>
-          </p>
+          <ol>
+            <li>
+              Clone the project to your computer from the GitHub link specified
+              above
+            </li>
+            <li>Open Unity Hub on your computer.</li>
+            <li>Click on the "Projects" tab on the left sidebar.</li>
+            <li>Click on the "Add" button to add a new project.</li>
+            <li>
+              In the popup window, browse to the location where you cloned the
+              project
+            </li>
+            <li>
+              Click on the <i>CS-528-Virtual-Reality-Project</i> folder to
+              select it.
+            </li>
+            <li>Click on the "Open" button to open the project in Unity.</li>
+          </ol>
         </div>
         <div class="col-lg-6">
-          
           <h4 class="mt-4">Running The Project</h4>
-          <p>
-            <ol style="text-align: justify;">
-              <li>In the Project window, navigate to <span class="bg-secondary-subtle px-1 rounded">Assets > module-omicron > CAVE2 > Scenes</span> and drag the <i>Cube World Example</i> scene to the Hierarchy window. Remove the <i>Untitled</i> scene already present there</li>
-              <li>Click on <i>StarManager</i> in the Hierarchy window. Then click on the <i>Resources (Assets > module-omicron > CAVE2)</i> folder in the Project window and drag and drop the <i>constellationData.json</i> and <i>StarData.csv</i> files into <i>Constellation Data Source</i> and <i>Star Data Source</i> fields respectively in the Inspector window for <i>StarManager</i></li>
-              <li>From the <i>Prefabs (Assets > module-omicron > CAVE2)</i> folder in the Porject window, drag and drop the <i>Line</i> prefab into the <i>Line Prefab</i> field in the Inspector window for <i>StarManager</i></li>
-              <li>Set the <i>Number Of Stars To Generate</i> value to <span class="bg-secondary-subtle px-1 rounded">100000</span> and <i>Scale Ratio Of Stars</i> value to <span class="bg-secondary-subtle px-1 rounded">0.05</span> respectively. The <i>Number Of Stars To Generate</i> can be reduced if you experience lag when running the project</li>
-              <li>Hit the play button to start running the project in the Game View panel</li>
-              <li>Use the <span class="bg-secondary-subtle px-1 rounded">WASD</span> keys to fly around in the environment. Use the <span class="bg-secondary-subtle px-1 rounded">QE</span> keys to turn left or right. Use the <span class="bg-secondary-subtle px-1 rounded">RF</span> keys to move up or down</li>
-            </ol>
-          </p>
+          <ol style="text-align: justify">
+            <li>
+              In the Project window, navigate to
+              <span class="bg-secondary-subtle px-1 rounded"
+                >Assets > module-omicron > CAVE2 > Scenes</span
+              >
+              and drag the <i>Cube World Example</i> scene to the Hierarchy
+              window. Remove the <i>Untitled</i> scene already present there
+            </li>
+            <li>
+              Click on <i>StarManager</i> in the Hierarchy window. Then click on
+              the <i>Resources (Assets > module-omicron > CAVE2)</i> folder in
+              the Project window and drag and drop the
+              <i>constellationData.json</i> and <i>StarData.csv</i> files into
+              <i>Constellation Data Source</i> and
+              <i>Star Data Source</i> fields respectively in the Inspector
+              window for <i>StarManager</i>
+            </li>
+            <li>
+              From the <i>Prefabs (Assets > module-omicron > CAVE2)</i> folder
+              in the Porject window, drag and drop the <i>Line</i> prefab into
+              the <i>Line Prefab</i> field in the Inspector window for
+              <i>StarManager</i>
+            </li>
+            <li>
+              Set the <i>Number Of Stars To Generate</i> value to
+              <span class="bg-secondary-subtle px-1 rounded">100000</span> and
+              <i>Scale Ratio Of Stars</i> value to
+              <span class="bg-secondary-subtle px-1 rounded">0.05</span>
+              respectively. The <i>Number Of Stars To Generate</i> can be
+              reduced if you experience lag when running the project
+            </li>
+            <li>
+              Hit the play button to start running the project in the Game View
+              panel
+            </li>
+            <li>
+              Use the
+              <span class="bg-secondary-subtle px-1 rounded">WASD</span> keys to
+              fly around in the environment. Use the
+              <span class="bg-secondary-subtle px-1 rounded">QE</span> keys to
+              turn left or right. Use the
+              <span class="bg-secondary-subtle px-1 rounded">RF</span> keys to
+              move up or down
+            </li>
+          </ol>
         </div>
       </div>
     </div>
