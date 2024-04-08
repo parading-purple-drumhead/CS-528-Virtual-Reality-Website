@@ -20,20 +20,36 @@
       </div>
 
       <div class="row mb-5">
-        <div class="col-lg-6">
+        <div class="col-lg-6 col-12">
           <iframe
-            class="rounded"
-            width="560"
-            height="315"
+            class="rounded mx-4 mb-5 mb-lg-0"
+            src="https://www.youtube.com/embed/19qnr15jmac?si=3POTIdRaAIp4LxyP"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            style="height: 20rem; width: 90%"
+          ></iframe>
+          <h4 class="text-center mt-2">Phase 2</h4>
+        </div>
+        <div class="col-lg-6 col-12">
+          <iframe
+            class="rounded mx-4 mb-5 mb-lg-0"
             src="https://www.youtube.com/embed/VgvHA4BQoXU?si=N2d_YkZW0tE6rmSa"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
+            style="height: 20rem; width: 90%"
           ></iframe>
+          <h4 class="text-center mt-2">Phase 1</h4>
         </div>
-        <div class="col-lg-6">
-          <h2 class="mb-5">Project Links</h2>
+      </div>
+
+      <div class="row mb-5">
+        <h2 class="mb-5">Project Links</h2>
+        <div class="col-lg-6 col-12">
           <p>
             <b>GitHub:</b>
             <a
@@ -41,12 +57,37 @@
               target="_blank"
               >https://github.com/parading-purple-drumhead/CS-528-Virtual-Reality-Project</a
             >
+            <br /><br />
+            <b>Star Data:</b>
+            <a
+              href="https://github.com/astronexus/ATHYG-Database"
+              target="_blank"
+              >https://github.com/astronexus/ATHYG-Database</a
+            >
+          </p>
+        </div>
+        <div class="col-lg-6 col-12">
+          <p>
+            <b>Constellation Data:</b>
+            <a
+              href="https://github.com/Stellarium/stellarium/blob/master/skycultures"
+              target="_blank"
+              >https://github.com/Stellarium/stellarium/blob/master/skycultures</a
+            ><br /><br />
+            <b>Exoplanet Data:</b>
+            <a
+              href="https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS"
+              target="_blank"
+              >https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS</a
+            >
           </p>
         </div>
       </div>
+
+      <!-- How To Run -->
       <div class="row mb-5">
         <h2>How To Run</h2>
-        <div class="col-lg-6">
+        <div class="col-lg-6 col-12">
           <h4 class="mt-4">Installing Unity</h4>
           <ol>
             <li>
@@ -90,7 +131,7 @@
             <li>Click on the "Open" button to open the project in Unity.</li>
           </ol>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 col-12">
           <h4 class="mt-4">Running The Project</h4>
           <ol style="text-align: justify">
             <li>
@@ -117,14 +158,6 @@
               <i>StarManager</i>
             </li>
             <li>
-              Set the <i>Number Of Stars To Generate</i> value to
-              <span class="bg-secondary-subtle px-1 rounded">100000</span> and
-              <i>Scale Ratio Of Stars</i> value to
-              <span class="bg-secondary-subtle px-1 rounded">0.05</span>
-              respectively. The <i>Number Of Stars To Generate</i> can be
-              reduced if you experience lag when running the project
-            </li>
-            <li>
               Hit the play button to start running the project in the Game View
               panel
             </li>
@@ -137,8 +170,231 @@
               <span class="bg-secondary-subtle px-1 rounded">RF</span> keys to
               move up or down
             </li>
+            <li>
+              In the CAVE2 environment, all interactions can be performed using
+              the CAVE2 wand, which is based on the PlayStation 3's controller
+              scheme
+            </li>
           </ol>
         </div>
+      </div>
+
+      <!-- Data and Pre-Processing -->
+      <div class="row mb-5">
+        <h2>Data and Pre-Processing</h2>
+        <div class="col-lg-6 col-12">
+          <h4 class="mt-4">Data Sources</h4>
+          <h5>Star Data</h5>
+          <ol class="mb-4">
+            <li>
+              Star positions and velocities -
+              <a
+                href="https://github.com/astronexus/ATHYG-Database"
+                target="_blank"
+                >https://github.com/astronexus/ATHYG-Database</a
+              >
+            </li>
+          </ol>
+          <h5>Constellation Data</h5>
+          <ol class="mb-4">
+            <li class="mb-2">
+              Modern constellations -
+              <a
+                href="https://github.com/Stellarium/stellarium/blob/master/skycultures/modern/constellationship.fab"
+                target="_blank"
+                >https://github.com/Stellarium/stellarium/blob/master/skycultures/modern/constellationship.fab</a
+              >
+            </li>
+            <li class="mb-2">
+              Aztec constellations -
+              <a
+                href="https://github.com/Stellarium/stellarium/blob/master/skycultures/aztec/constellationship.fab"
+                target="_blank"
+                >https://github.com/Stellarium/stellarium/blob/master/skycultures/aztec/constellationship.fab</a
+              >
+            </li>
+            <li class="mb-2">
+              Egyptian constellations -
+              <a
+                href="https://github.com/Stellarium/stellarium/blob/master/skycultures/egyptian/constellationship.fab"
+                target="_blank"
+                >https://github.com/Stellarium/stellarium/blob/master/skycultures/egyptian/constellationship.fab</a
+              >
+            </li>
+            <li class="mb-2">
+              Navajo constellations -
+              <a
+                href="https://github.com/Stellarium/stellarium/blob/master/skycultures/navajo/constellationship.fab"
+                target="_blank"
+                >https://github.com/Stellarium/stellarium/blob/master/skycultures/navajo/constellationship.fab</a
+              >
+            </li>
+            <li class="mb-2">
+              Norse constellations -
+              <a
+                href="https://github.com/Stellarium/stellarium/blob/master/skycultures/norse/constellationship.fab"
+                target="_blank"
+                >https://github.com/Stellarium/stellarium/blob/master/skycultures/norse/constellationship.fab</a
+              >
+            </li>
+            <li class="mb-2">
+              Samoan constellations -
+              <a
+                href="https://github.com/Stellarium/stellarium/blob/master/skycultures/samoan/constellationship.fab"
+                target="_blank"
+                >https://github.com/Stellarium/stellarium/blob/master/skycultures/samoan/constellationship.fab</a
+              >
+            </li>
+          </ol>
+          <h5>Exoplanet Data</h5>
+          <ol>
+            <li class="mb-2">
+              Stars and associated number of planets -
+              <a
+                href="https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS"
+                target="_blank"
+                >https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS</a
+              >
+            </li>
+          </ol>
+        </div>
+        <div class="col-lg-6 col-12">
+          <h4 class="mt-4">Data Pre-Processing</h4>
+          <h5>Star Data</h5>
+          <p style="text-align: justify">
+            I used pandas to process the star data which was in the form of a
+            csv with the following column headings: "id", "tyc", "gaia", "hyg",
+            "hip", "hd", "hr", "gl", "bayer", "flam", "con", "proper", "ra",
+            "dec", "pos_src", "dist", "x0", "y0", "z0", "dist_src", "mag",
+            "absmag", "ci", "mag_src", "rv", "rv_src", "pm_ra", "pm_dec",
+            "pm_src", "vx", "vy", "vz", "spect", "spect_src". I removed all
+            columns except for hip, dist, x0, y0, z0, absmag, mag, vx, vy, vz,
+            spect. I removed all rows that had null hip values and also ones
+            that had dist less than 25 lightyears (the data was in parsecs). The
+            final CSV looked like this:
+          </p>
+
+          <!-- Data table -->
+          <div class="table-responsive">
+            <table class="table table-light">
+              <thead>
+                <tr>
+                  <th>hip</th>
+                  <th>dist</th>
+                  <th>x0</th>
+                  <th>y0</th>
+                  <th>z0</th>
+                  <th>absmag</th>
+                  <th>mag</th>
+                  <th>vx</th>
+                  <th>vy</th>
+                  <th>vz</th>
+                  <th>spect</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1.0</td>
+                  <td>219.7802</td>
+                  <td>219.741</td>
+                  <td>0.003</td>
+                  <td>4.177</td>
+                  <td>2.39</td>
+                  <td>9.1</td>
+                  <td>0.037</td>
+                  <td>-5.418</td>
+                  <td>-1.958</td>
+                  <td>F</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h5>Constellation Data</h5>
+          <p>
+            I processed each constellation set's constellationship.fab file
+            using a python script and converted the data to a json with the
+            following format:
+          </p>
+
+          <p class="p-1 rounded" style="background-color: rgb(227, 227, 227)">
+            <code>
+              {"constellations": [ {"name": "Aql", "numOfPairs": 8, "pairs": [
+              {"pair": [98036, 97649]}, {"pair": [97649, 97278]}, ... ] } ] }
+            </code>
+          </p>
+
+          <h5>Exoplanet Data</h5>
+          <p>
+            I selected the <i>HIP ID</i> and <i>Number of Planets</i> columns
+            and removed all null values and duplicate rows
+          </p>
+        </div>
+      </div>
+
+      <!-- Interesting Notes from Development -->
+      <div class="row mb-5">
+        <h2>Interesting Notes from Development and Testing</h2>
+        <p style="text-align: justify; line-height: 2rem">
+          This was my first time developing an application for a cave-like
+          virtual reality environment. Unity was not entirely user-friendly in
+          terms of helping me figure out what the problem was when the
+          application broke. During phase 1 of development, I used a nested
+          for-loop to iterate over my star data not accounting for its size.
+          That's when I realized just how bad an idea it was to use an
+          O(n<sup>3</sup>) complexity method on a dataset of 108k entries (my
+          laptop's fan were begging for mercy). When using the application, the
+          flying around functionality made me understand how constellations as a
+          whole only made sense when viewed from the earth and how viewing them
+          from different perspectives makes these really wonky looking stretched
+          out shapes. I also did not think I would spend more than half my
+          development time on just optimizing the application to run at an
+          acceptable frame rate, instead of working on introducing new features
+          and functionalities for it. It did force me to think outside the box
+          and come up with rather unconventional code solutions to get things
+          running smoothly. Questionable? Sure, but hey if it works, it works.
+        </p>
+      </div>
+
+      <div class="row mb-5">
+        <h2>Notes on Optimization</h2>
+        <p style="text-align: justify; line-height: 2rem">
+          While developing phase 1 of the application, I was storing the star
+          data and constellation data in the form of lists and was also
+          iterating over them using nested for-loops which increased my time
+          complexity to O(n<sup>3</sup>). This was especially bad, given that I
+          was iterating over more than 108,000 elements stored in the star data
+          list. My Unity would crash and not render anything. I then realized
+          the order that the stars were rendered in did not matter and switched
+          to using a dictionary to store and access the star and constellation
+          data instead. This made my project build significantly faster and let
+          me actually fly around my scene without my framerate dropping too
+          much.
+        </p>
+        <p style="text-align: justify; line-height: 2rem">
+          Another opportunity for optimization came in deciding how many stars
+          to render. Initially, with all the stars remaining static, my
+          framerate was approximately 30 FPS, which was alright, but I knew the
+          CAVE2 would not be able to keep up and thus had to improve it. I then
+          wrote a function to first, only render stars within a threshold
+          distance (50 units in my case), and second, then to not render any new
+          stars until I had moved beyond a 10 unit radius. This simple changed
+          bumped my framerate up from 30 FPS to 400 FPS. In the CAVE2
+          environment, this translated to a steady 60 FPS.
+        </p>
+        <p style="text-align: justify; line-height: 2rem">
+          The next bit of optimization I did was drop my render threshold
+          distance from 50 units to 25 units when moving through time. This was
+          a graphic heavy functionality overall and I was thus limited to a
+          framerate of just 10 FPS in the CAVE2 environment. Without changing
+          the threshold, it was running at 4 FPS, which was impossible to work
+          with. The final bit of optimization was turning off all shadows cast
+          and received and also turning off collision detections in all the
+          prefabs being rendered in the scene. This helped up the frame rate by
+          about 10 FPS. Overall, the project ran at a steady 60 FPS in the CAVE2
+          environment and dropped to about 10 FPS when star and constellation
+          motion was enabled.
+        </p>
       </div>
     </div>
 
