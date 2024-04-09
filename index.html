@@ -137,6 +137,43 @@
         </ul>
       </div>
 
+      <!-- In-App Screenshots -->
+      <div class="row mb-5">
+        <h2>In-App Screenshots</h2>
+        <div class="row mt-4">
+          <div class="col-lg-6 offset-lg-0 col-md-10 offset-md-1 col-12">
+            <img src="./images/in-app-1.png" class="img-fluid rounded" />
+            <h6 class="text-center mt-2">Initial scene on startup</h6>
+          </div>
+          <div
+            class="col-lg-6 offset-lg-0 col-md-10 offset-md-1 col-12 mt-4 mt-lg-0"
+          >
+            <img src="./images/in-app-2.png" class="img-fluid rounded" />
+            <h6 class="text-center mt-2">In-scene menu</h6>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-lg-6 offset-lg-0 col-md-10 offset-md-1 col-12">
+            <img src="./images/in-app-3.png" class="img-fluid rounded" />
+            <h6 class="text-center mt-2">User updated color scheme</h6>
+          </div>
+          <div
+            class="col-lg-6 offset-lg-0 col-md-10 offset-md-1 col-12 mt-4 mt-lg-0"
+          >
+            <img src="./images/in-app-4.png" class="img-fluid rounded" />
+            <h6 class="text-center mt-2">
+              Different cultural constellation sets
+            </h6>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-lg-6 offset-lg-3 col-md-10 offset-md-1 col-12">
+            <img src="./images/in-app-5.png" class="img-fluid rounded" />
+            <h6 class="text-center mt-2">Featured constellation panel</h6>
+          </div>
+        </div>
+      </div>
+
       <!-- How To Run -->
       <div class="row mb-5">
         <h2>How To Run</h2>
@@ -206,7 +243,7 @@
             </li>
             <li>
               From the <i>Prefabs (Assets > module-omicron > CAVE2)</i> folder
-              in the Porject window, drag and drop the <i>Line</i> prefab into
+              in the Project window, drag and drop the <i>Line</i> prefab into
               the <i>Line Prefab</i> field in the Inspector window for
               <i>StarManager</i>
             </li>
@@ -396,14 +433,14 @@
           for-loop to iterate over my star data not accounting for its size.
           That's when I realized just how bad an idea it was to use an
           O(n<sup>3</sup>) complexity method on a dataset of 108k entries (my
-          laptop's fan were begging for mercy). When using the application, the
+          laptop's fans were begging for mercy). When using the application, the
           flying around functionality made me understand how constellations as a
-          whole only made sense when viewed from the earth and how viewing them
-          from different perspectives makes these really wonky looking stretched
-          out shapes. I also learned that stars have their own velocities and so
-          any constellations, while not permanent, will stick around for very
-          long. It was only when I moved around 100,000 years forward or back in
-          time did I notice any significant changes to the structures of the
+          whole only made sense when viewed from earth and how viewing them from
+          different perspectives makes these really wonky looking stretched out
+          shapes. I also learned that stars have their own velocities and so any
+          constellations, while not permanent, will stick around for very long.
+          It was only when I moved around 100,000 years forward or back in time
+          did I notice any significant changes to the structures of the
           constellations. I also did not think I would spend more than half my
           development time on just optimizing the application to run at an
           acceptable frame rate, instead of working on introducing new features
